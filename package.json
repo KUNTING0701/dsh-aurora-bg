@@ -1,0 +1,26 @@
+{
+  "name": "dsh-aurora-bg",
+  "description": "DeepSeek 官网风格动态极光背景：深蓝流体光斑 + 金色流纹 + 粒子网格，随 dsh 启动自动加载",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ]
+}
